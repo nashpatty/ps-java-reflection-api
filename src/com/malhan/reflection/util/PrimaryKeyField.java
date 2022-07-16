@@ -1,2 +1,4 @@
-package com.malhan.reflection.util;public class PrimaryKeyField {
+package com.malhan.reflection.util;
+
+public class PrimaryKeyField {
 }
