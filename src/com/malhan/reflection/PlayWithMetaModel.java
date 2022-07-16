@@ -16,5 +16,15 @@ public class PlayWithMetaModel {
 
         PrimaryKeyField primaryKeyField = metaModel.getPrimaryKey();
         List<ColumnField> columnFieldList = metaModel.getColumns();
+
+        // Print out the primary key field
+        System.out.println("Primary key name = " + primaryKeyField.getName() +
+                ", type = " + primaryKeyField.getType().getSimpleName());
+
+        // Print out the columns fields
+        for (ColumnField columnField : columnFieldList) {
+            System.out.println("Column name = " + columnField.getName() +
+                    ", type = " + columnField.getType().getSimpleName());
+        }
     }
 }
